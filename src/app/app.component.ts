@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TransferenciaService } from './services/transferencia.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,11 +8,6 @@ export class AppComponent {
   title = 'bytebank';
 
   constructor(
-    private transferenciaService: TransferenciaService
   ){}
-
-  transferir(e) {
-    this.transferenciaService.adicionar(e)
-  }
 
 }
